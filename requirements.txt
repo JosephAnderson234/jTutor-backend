@@ -1,0 +1,10 @@
+flask
+flask-jwt-extended
+flask-cors
+python-dotenv
+sqlalchemy
+faiss-cpu
+pdfplumber
+tiktoken
+openai
+numpy
