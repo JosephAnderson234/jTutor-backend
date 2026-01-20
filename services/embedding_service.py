@@ -21,6 +21,10 @@ def add_documents(chunks: list[str]):
         documents.append(chunk)
 
 def search(query: str, k=4):
+    # Validar que hay documentos indexados
+    if len(documents) == 0:
+        return []
+    
     client = get_chat_client()
     response = client.embeddings.create(
         model=get_embedding_model_name(),
